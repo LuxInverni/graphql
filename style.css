@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+}
+
+
+/* =========================
+   Layout
+========================= */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#loginpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.topCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+
+/* =========================
+   Copy
+========================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    color: #23364d;
+}
+
+h2 {
+    margin-top: 0;
+    color: #23364d;
+    border-bottom: 2px solid #eef2f7;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #4d6178;
+    margin-top: 10px;
+}
+
+
+/*=========================
+   Sections / Cards
+=========================*/
+
+section {
+    background: white;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border: 1px solid #dbe3ec;
+}
+
+section p {
+    font-size: 17px;
+    margin: 14px 0;
+    color: #444;
+}
+
+
+/*=========================
+   Buttons
+=========================*/
+
+button {
+    background: #2d6cdf;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s ease,
+                transform 0.2s ease;
+}
+
+button:hover {
+    background: #1d5ac0;
+    transform: translateY(-2px);
+}
+
+
+/*=========================
+   Forms / Inputs
+=========================*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 420px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccd5df;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2d6cdf;
+}
+
+#error {
+    color: #c62828;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/*=========================
+   Graphs
+=========================*/
+
+svg {
+    display: block;
+    margin: 20px auto;
+}
+
+#xpGraph,
+#skillGraph {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#xpGraph svg {
+    width: 100%;
+    height: auto;
+}
+
+#skillGraph svg {
+    width: min(80vw, 600px);
+    height: auto;
+}
+
+.graph {
+    background: #f8fafc;
+    border: 1px solid #d7e1eb;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.graph h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}

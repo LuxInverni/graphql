@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GraphQL Profile</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<main>
+
+    <header>
+        <h1>GraphQL Profile</h1>
+        <button id="logout">
+            Logout
+        </button>
+    </header>
+
+    <div class="topCards">
+        <section>
+            <h2>User Information</h2>
+            <p id="username"></p>
+            <p id="userid"></p>
+        </section>
+
+        <section>
+            <h2>Audit Information</h2>
+            <p id="audit"></p>
+        </section>
+
+        <section>
+            <h2>XP Information</h2>
+            <p id="xp"></p>
+        </section>
+    </div>
+
+    <section>
+        <h2>Graphical Statistics</h2>
+        <div class="graph">
+            <h3>XP Progress</h3>
+            <div id="xpGraph"></div>
+        </div>
+
+        <div class="graph">
+            <h3>Skills</h3>
+            <div id="skillGraph"></div>
+        </div>
+
+        <div class="graph">
+            <h3>Checkpoint Progress</h3>
+            <div id="checkpointChart"></div>
+        </div>
+    </section>
+
+</main>
+
+<script type="module" src="./js/profile.js"></script>
+
+</body>
+</html>
